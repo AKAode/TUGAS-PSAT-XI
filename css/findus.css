@@ -1,201 +1,219 @@
-
 @import url('https://fonts.cdnfonts.com/css/creato-display');
 
-
-  /* Isi */
-
-  /* article */
-
-  .map-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  
-  h1 {
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .subtext {
-      font-size: 1.25rem; 
-      line-height: 1.6; 
-      color: #333;
-      text-align: left;
-      padding: 10px 21%;
-      margin: 20px 0;
-  }
-
-  #list {
-    padding: 1px 30px;
-  }
-
-  /* table */
-  table {
-    border-collapse: collapse;
-    margin: 1rem 25rem;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  th, td {
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
-  }
-
-  th {
-    background-color: #fbba72;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  tr:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.3s ease;
-  }
-
-
-  /* footer */
-/* Tambahkan ini di bagian CSS yang ada *
-  
-  /* scroll snap */
-  .scroll-container {
-    height: 30vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    padding-top: 120px;
-  }
-  
-  .scroll-section {
-    height: 30vh;
-    scroll-snap-align: start;
-  }
-  
-  .promo-banner,
-  .new-products,
-  .main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .usagi-footer {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 40px 20px 20px;
+/* Base Styles */
+.find-us-container {
+  background-color: #fffaf3;
+  color: #3D2C29;
   font-family: 'Creato Display', sans-serif;
-  line-height: 1.6;
+  padding-top: 80px;
 }
 
-.footer-container {
+/* Map Section */
+.map-section {
+  padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
-.footer-brand {
+.map-header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.footer-logo {
-  width: 120px;
-  height: auto;
+.map-header h1 {
+  font-size: 2.5rem;
+  color: #3D2C29;
   margin-bottom: 10px;
 }
 
-.footer-tagline {
-  color: #fbba72;
-  font-size: 16px;
-  letter-spacing: 1px;
+.map-header p {
+  color: #7A5E4F;
+  font-size: 1.1rem;
 }
 
-.footer-sections {
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Locations Section */
+.locations-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #3D2C29;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #7A5E4F;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.location-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
-}
-
-.footer-section {
-  margin-bottom: 20px;
-}
-
-.footer-heading {
-  color: #fbba72;
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.footer-address, 
-.footer-phone, 
-.footer-whatsapp {
-  margin-bottom: 10px;
-}
-
-.footer-address {
-  font-style: normal;
-}
-
-.footer-phone {
-  font-weight: 500;
-}
-
-.footer-whatsapp {
-  color: #25D366;
-  font-weight: 500;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #000000;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #fbba72;
-}
-
-.footer-copyright {
-  text-align: center;
-  padding-top: 30px;
   margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
 }
 
+.location-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-card.featured {
+  border: 2px solid #fbba72;
+  position: relative;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #a86b44;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.location-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.location-details {
+  padding: 20px;
+}
+
+.location-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #3D2C29;
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #7A5E4F;
+}
+
+.location-info i {
+  margin-right: 10px;
+  color: #a86b44;
+}
+
+.location-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.direction-btn, .call-btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.direction-btn {
+  background: #a86b44;
+  color: white;
+  text-decoration: none;
+}
+
+.direction-btn:hover {
+  background: #8a5738;
+}
+
+.call-btn {
+  background: white;
+  color: #a86b44;
+  border: 1px solid #a86b44;
+  text-decoration: none;
+}
+
+.call-btn:hover {
+  background: #f5ebe1;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  background: linear-gradient(rgba(61, 44, 41, 0.8), rgba(61, 44, 41, 0.8)), 
+              url('../assets/images/coffee-beans-bg.jpg');
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.coming-soon h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.coming-soon-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.coming-location {
+  background: rgba(251, 186, 114, 0.2);
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.coming-location:hover {
+  transform: translateY(-5px);
+}
+
+.coming-location i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .footer-sections {
+  .find-us-container {
+    padding-top: 60px;
+  }
+  
+  .map-header h1 {
+    font-size: 2rem;
+  }
+  
+  .location-cards {
     grid-template-columns: 1fr;
   }
   
-  .footer-section {
-    text-align: center;
+  .coming-soon-grid {
+    gap: 20px;
   }
 }
