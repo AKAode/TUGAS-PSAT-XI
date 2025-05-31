@@ -1,201 +1,195 @@
-
 @import url('https://fonts.cdnfonts.com/css/creato-display');
 
-
-  /* Isi */
-
-  /* article */
-
-  .map-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  
-  h1 {
-    font-size: 70px;
-    text-align: center;
-  }
-
-  .subtext {
-      font-size: 1.25rem; 
-      line-height: 1.6; 
-      color: #333;
-      text-align: left;
-      padding: 10px 21%;
-      margin: 20px 0;
-  }
-
-  #list {
-    padding: 1px 30px;
-  }
-
-  /* table */
-  table {
-    border-collapse: collapse;
-    margin: 1rem 25rem;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  th, td {
-    padding: 12px 15px;
-    text-align: center;
-    border: 1px solid #e0e0e0;
-  }
-
-  th {
-    background-color: #fbba72;
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-
-  tr:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.3s ease;
-  }
-
-
-  /* footer */
-/* Tambahkan ini di bagian CSS yang ada *
-  
-  /* scroll snap */
-  .scroll-container {
-    height: 30vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    padding-top: 120px;
-  }
-  
-  .scroll-section {
-    height: 30vh;
-    scroll-snap-align: start;
-  }
-  
-  .promo-banner,
-  .new-products,
-  .main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .usagi-footer {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 40px 20px 20px;
+/* Base Styles */
+.find-us-container {
+  background-color: #fffaf3;
+  color: #3D2C29;
   font-family: 'Creato Display', sans-serif;
-  line-height: 1.6;
-}
-
-.footer-container {
+  padding: 80px 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
 
-.footer-brand {
+/* Map Section */
+.map-section {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.footer-logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.footer-tagline {
-  color: #fbba72;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.footer-sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.footer-section {
+.map-section h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #3D2C29;
 }
 
-.footer-heading {
-  color: #fbba72;
-  font-size: 18px;
-  margin-bottom: 15px;
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* List Section */
+.list-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.list-section h2 {
+  font-size: 1.8rem;
+  color: #3D2C29;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.list-section h2 i {
+  color: #a86b44;
+}
+
+.location-list {
+  list-style-type: none;
+  counter-reset: branch-counter;
+  padding-left: 0;
+}
+
+.location-list > li {
+  counter-increment: branch-counter;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+
+.location-list > li:last-child {
+  border-bottom: none;
+}
+
+.location-list > li::before {
+  content: counter(branch-counter);
+  background: #a86b44;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.location-list strong {
+  font-size: 1.2rem;
+  color: #3D2C29;
+  vertical-align: middle;
+}
+
+.branch-details {
+  list-style-type: none;
+  padding-left: 45px;
+  margin-top: 10px;
+}
+
+.branch-details li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7A5E4F;
+}
+
+.branch-details i {
+  color: #a86b44;
+  width: 20px;
+  text-align: center;
+}
+
+/* Table Section */
+.table-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+.table-section h2 {
+  font-size: 1.8rem;
+  color: #3D2C29;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-section h2 i {
+  color: #a86b44;
+}
+
+.location-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.location-table th, 
+.location-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.location-table th {
+  background-color: #fbba72;
+  color: white;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
 
-.footer-address, 
-.footer-phone, 
-.footer-whatsapp {
-  margin-bottom: 10px;
+.location-table tr:nth-child(even) {
+  background-color: #fffaf3;
 }
 
-.footer-address {
-  font-style: normal;
+.location-table tr:hover {
+  background-color: #f5ebe1;
 }
 
-.footer-phone {
-  font-weight: 500;
+.location-table td:first-child {
+  font-weight: 600;
+  color: #3D2C29;
 }
 
-.footer-whatsapp {
-  color: #25D366;
-  font-weight: 500;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 8px;
-}
-
-.footer-links a {
-  color: #000000;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #fbba72;
-}
-
-.footer-copyright {
-  text-align: center;
-  padding-top: 30px;
-  margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.7);
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  .footer-sections {
-    grid-template-columns: 1fr;
+  .find-us-container {
+    padding-top: 60px;
   }
   
-  .footer-section {
-    text-align: center;
+  .map-section h1 {
+    font-size: 2rem;
+  }
+  
+  .list-section h2,
+  .table-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .branch-details {
+    padding-left: 30px;
+  }
+  
+  .location-table {
+    font-size: 0.85rem;
+  }
+  
+  .location-table th, 
+  .location-table td {
+    padding: 10px 8px;
   }
 }
