@@ -1,0 +1,116 @@
+ 
+@import url('https://fonts.cdnfonts.com/css/creato-display');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Creato Display', sans-serif;
+  }
+
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000; /* Pastikan z-index lebih tinggi dari sidebar */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add to your css/homeA.css */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: #fff;
+  height: 88px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: relative;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  line-height: 100px;
+  margin-right: 24px;
+  margin-top: 25px;
+  text-decoration: none;
+  text-shadow: #333;
+  font-family: 'Creato Display', sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20px;  
+  padding: 0px 20px;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 30px; /* Sesuaikan posisi underline */
+  left: 20px;
+  width: 0;
+  height: 2px;
+  background-color: #fbba72;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.nav-links a:hover::after {
+  width: calc(100% - 40px); /* Sesuaikan dengan padding */
+}
+
+.nav-links a:hover {
+  color: #fbba72;
+  background-color: transparent;
+  font-size: 25px;
+} 
+
+/* Optional: Add an animation for the text */
+.nav-links a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover span {
+  transform: translateY(-3px);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+  
+
+  
+  /* Tambahkan ini di bagian CSS yang ada */
+.nav-logo {
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Atur ukuran logo sesuai kebutuhan */
+    height: 150px; /* Atur ukuran logo sesuai kebutuhan */
+    
+    /* margin-left: 1150px; */
+}
+    

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews - Usagi Coffee</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/reviews.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><img src="/assets/images/logo.png" alt="Logo" class="nav-logo" /></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span></span>
+        <span>🔔</span>
+        <span>🌐 EN</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="reviews-container">
+    <section class="reviews-header">
+      <h1>What Our Customers Say</h1>
+      <p>Trusted testimonials from coffee lovers</p>
+      <div class="rating-overview">
+        <div class="average-rating">
+          <span class="stars">★★★★★</span>
+          <span class="score">4.9</span>/5
+        </div>
+        <p>Based on 287 genuine reviews</p>
+      </div>
+    </section>
+
+    <section class="testimonials-grid">
+      <!-- Review 1 -->
+      <article class="testimonial-card featured">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer1.jpg" alt="Sarah Wijaya" class="reviewer-avatar">
+          <div>
+            <h3>Sarah Wijaya</h3>
+            <span class="verification-badge">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-date">2 days ago</span>
+        </div>
+        <p class="review-text">"The Usagi Latte is absolute perfection! The caramel and cinnamon blend is unlike anything I've tasted before. The staff at AEON Mall Sentul branch were incredibly friendly too."</p>
+        <div class="review-meta">
+          <span class="location">AEON Mall Sentul Branch</span>
+          <button class="helpful-btn">👍 24 Helpful</button>
+        </div>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="testimonial-card">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer2.jpg" alt="Budi Santoso" class="reviewer-avatar">
+          <div>
+            <h3>Budi Santoso</h3>
+            <span class="verification-badge">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★☆</span>
+          <span class="review-date">1 week ago</span>
+        </div>
+        <p class="review-text">"Consistently good Americano. I visit the A.H. Nasution branch every morning before work. The only reason I'm not giving 5 stars is because sometimes the queue gets too long during peak hours."</p>
+        <div class="review-meta">
+          <span class="location">A.H. Nasution Branch</span>
+          <button class="helpful-btn">👍 18 Helpful</button>
+        </div>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="testimonial-card">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer3.jpg" alt="Dewi Anggraeni" class="reviewer-avatar">
+          <div>
+            <h3>Dewi Anggraeni</h3>
+            <span class="verification-badge">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-date">3 weeks ago</span>
+        </div>
+        <p class="review-text">"The Matcha Latte here ruined all other matcha drinks for me! Perfect balance of sweetness and authentic matcha flavor. Also love the minimalist interior design at Adam Malik branch."</p>
+        <div class="review-meta">
+          <span class="location">Adam Malik Branch</span>
+          <button class="helpful-btn">👍 32 Helpful</button>
+        </div>
+      </article>
+
+      <!-- Review 4 -->
+      <article class="testimonial-card">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer4.jpg" alt="Michael Chen" class="reviewer-avatar">
+          <div>
+            <h3>Michael Chen</h3>
+            <span class="verification-badge">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-date">1 month ago</span>
+        </div>
+        <p class="review-text">"As a coffee enthusiast, I appreciate their attention to detail. The single-origin beans they use for espresso are exceptional. The baristas clearly know their craft."</p>
+        <div class="review-meta">
+          <span class="location">Tanjung Barat Branch</span>
+          <button class="helpful-btn">👍 45 Helpful</button>
+        </div>
+      </article>
+
+      <!-- Review 5 -->
+      <article class="testimonial-card">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer5.jpg" alt="Rina Permata" class="reviewer-avatar">
+          <div>
+            <h3>Rina Permata</h3>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★★</span>
+          <span class="review-date">2 months ago</span>
+        </div>
+        <p class="review-text">"The Chocolate Mocha is my guilty pleasure! Not too sweet like other places. I also appreciate that they offer dairy-free milk options. The cinnamon rolls pair perfectly!"</p>
+        <div class="review-meta">
+          <span class="location">A.H. Nasution Branch</span>
+          <button class="helpful-btn">👍 29 Helpful</button>
+        </div>
+      </article>
+
+      <!-- Review 6 -->
+      <article class="testimonial-card">
+        <div class="reviewer-info">
+          <img src="assets/images/reviewers/reviewer6.jpg" alt="Aditya Putra" class="reviewer-avatar">
+          <div>
+            <h3>Aditya Putra</h3>
+            <span class="verification-badge">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="review-rating">
+          <span class="stars">★★★★☆</span>
+          <span class="review-date">2 months ago</span>
+        </div>
+        <p class="review-text">"Great ambiance for working remotely. The WiFi is fast and the power outlets are conveniently placed. The cappuccino foam art is always Instagram-worthy!"</p>
+        <div class="review-meta">
+          <span class="location">Adam Malik Branch</span>
+          <button class="helpful-btn">👍 15 Helpful</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="review-cta">
+      <h2>Share Your Experience</h2>
+      <p>Visited our coffee shop recently? We'd love to hear your thoughts!</p>
+      <button class="write-review-btn">Write a Review</button>
+    </section>
+  </main>
+
+  <footer class="usagi-footer">
+    <!-- Same footer as your other pages -->
+  </footer>
+</body>
+</html>

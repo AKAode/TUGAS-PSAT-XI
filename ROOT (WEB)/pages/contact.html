@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Usagi Coffee</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><img src="/assets/images/logo.png" alt="Logo" class="nav-logo" /></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span></span>
+        <span>🔔</span>
+        <span>🌐 EN</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <section class="contact-header">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you! Reach out for inquiries, feedback, or just to say hello.</p>
+    </section>
+
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="feedback">Feedback</option>
+              <option value="business">Business Partnership</option>
+              <option value="careers">Careers</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info-section">
+        <h2>Other Ways to Connect</h2>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📧</div>
+          <div>
+            <h3>Email Us</h3>
+            <p>hello@usagicoffee.id</p>
+            <p>support@usagicoffee.id</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📱</div>
+          <div>
+            <h3>Call/WhatsApp</h3>
+            <p>+62 812 3456 7890 (Customer Service)</p>
+            <p>+62 821 0987 6543 (Business Inquiries)</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h3>Head Office</h3>
+            <p>Usagi Coffee Headquarters</p>
+            <p>Jl. Sudirman No. 45, Jakarta Selatan</p>
+            <p>DKI Jakarta 12190, Indonesia</p>
+          </div>
+        </div>
+        
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">📘</a>
+            <a href="#" class="social-icon">📸</a>
+            <a href="#" class="social-icon">🐦</a>
+            <a href="#" class="social-icon">📹</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          What are your business hours?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our coffee shops are typically open from 7:00 AM to 10:00 PM daily, though hours may vary by location. Please check our Find Us page for specific branch hours.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer catering services?
+          <span class="toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! We provide catering for events and meetings. Please contact our business inquiries line or email us at events@usagicoffee.id for more information.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          How can I apply for a job?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We're always looking for passionate coffee enthusiasts! Please send your CV to careers@usagicoffee.id or visit any of our locations to inquire about current openings.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you have loyalty programs?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! Download our mobile app to join the Usagi Rewards program where you can earn points with every purchase and redeem free drinks.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="usagi-footer">
+    <!-- Same footer as your other pages -->
+  </footer>
+
+  <script src="/js/contact.js"></script>
+</body>
+</html>

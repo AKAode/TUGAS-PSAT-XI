@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/footer.css">
+</head>
+<header>
+    <nav class="main-nav">
+    <div class="logo">
+        <img src="/assets/images/logo.png" alt="Logo" class="nav-logo" />
+    </div>
+</header>
+<body>
+    <div class="page-content-wrapper">
+        <div class="signup-container">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div>
+                        <label for="name">First Name:</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div>
+                        <label for="name">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="password" required>
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <span class="gender-group">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Mentally ill</label>
+                        </span>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select a country</option>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="indonesia">Indonesia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <span class="chkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms and conditions</label>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="chkbox-group">
+                            <input type="checkbox" id="news" name="news" required>
+                            <label for="news">I want to be notified in email</label>
+                        </span>
+                    </div>
+                    <div>
+                        <button type="submit" class="submit">Create Account</button>
+                    </div>
+                </fieldset>
+            </form>
+      <footer>
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-wrapper">
+          <img src="assets/images/logo.png" alt="Usagi Coffee Logo" class="footer-logo" />
+        </div>
+      </div>
+
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h4>Customer Center</h4>
+          <address>
+            Gedung Usagi<br />
+            Lantai 2 Suite 200<br />
+            Jl. Sudirman No. 45<br />
+            Jakarta Selatan, DKI Jakarta
+          </address>
+          <p class="footer-phone">📞 <a href="tel:081234567890">0812-3456-7890</a></p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Consumer Protection</h4>
+          <p>Directorate General of Consumer Protection<br />
+          Ministry of Trade Republic of Indonesia</p>
+          <p class="footer-whatsapp">📱 <a href="https://wa.me/6285311111010" target="_blank" rel="noopener noreferrer">0853-1111-1010</a></p>
+        </div>
+
+<div class="footer-column">
+  <h4>Follow Us</h4>
+  <ul class="footer-links social-icons">
+    <li><a href="https://wa.me/6285311111010" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="https://www.twitter.com" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+  </ul>
+</div>
+
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Usagi Coffee. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+</body>
+</html>
+
+<script src="/scripts/confirmpassword.js"></script>

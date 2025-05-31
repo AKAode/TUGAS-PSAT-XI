@@ -1,0 +1,195 @@
+footer {
+  background-color: #1a1a1a;
+  color: #eee;
+  padding: 50px 20px 30px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-wrapper {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 3rem;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.footer-column p,
+.footer-column address,
+.footer-column a {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ff7f50;
+  text-decoration: underline;
+}
+
+.footer-phone,
+.footer-whatsapp {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.footer-whatsapp a {
+  color: #25D366;
+  font-weight: 600;
+}
+
+/* Bagian ikon sosial media */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+}
+
+.footer-links.social-icons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.footer-links.social-icons li {
+  list-style: none;
+}
+
+.footer-links.social-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-links.social-icons a:hover {
+  color: white;
+}
+
+/* Warna brand */
+.footer-links a[aria-label="WhatsApp"] {
+  background-color: #25D366;
+}
+
+.footer-links a[aria-label="Instagram"] {
+  background: radial-gradient(circle at 30% 30%, #fdf497 0%, #fd5949 50%, #d6249f 75%, #285AEB 100%);
+}
+
+.footer-links a[aria-label="X"] {
+  background-color: #000;
+}
+
+.footer-links a[aria-label="LinkedIn"] {
+  background-color: #0077b5;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  background-color: #121212;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.04em;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-column {
+    min-width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social {
+    align-items: center;
+    text-align: center;
+  }
+}
+

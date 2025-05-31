@@ -1,0 +1,142 @@
+/* Header */
+
+  header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000; /* Pastikan z-index lebih tinggi dari sidebar */
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add to your css/homeA.css */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: #fff;
+  height: 88px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* logo */
+.nav-logo {
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Atur ukuran logo sesuai kebutuhan */
+    height: 150px; /* Atur ukuran logo sesuai kebutuhan */
+}
+
+
+/* Basic styles for the sign-up page */
+body {
+    font-family: 'Creato Display', sans-serif;
+    background-color: #fffaf3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add this to center the signup box and stack the footer below */
+.page-content-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 20px 115px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.signup-container fieldset {
+    border: none;   
+}
+
+.signup-container legend {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-container div {
+    margin-bottom: 15px;
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup-container label[for="terms"] { 
+    font-weight: normal;
+}
+
+.signup-container label[for="news"] { 
+    font-weight: normal;
+}
+
+.signup-container .chkbox-group {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container select,
+.signup-container textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.signup-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fbba72;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-container button:hover {
+    background-color: #e8a849;
+}
+
+.gender-group {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.gender-group label {
+    font-weight: normal;
+}
+
+.submit {
+    font-weight: bold;
+    color: #fff;
+}

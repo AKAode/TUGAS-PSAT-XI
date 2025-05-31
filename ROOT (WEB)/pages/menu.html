@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Usagi Coffee</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><img src="/assets/images/logo.png" alt="Logo" class="nav-logo" /></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="findus.html">Find Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="cart-icon">🛒 <span class="cart-count">0</span></span>
+        <span>🌐 EN</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="menu-page">
+    <!-- Hero Section with Animated Coffee Beans -->
+    <section class="menu-hero">
+      <div class="hero-content">
+        <h1>Our Crafted Menu</h1>
+        <p>Each drink tells a story of passion and precision</p>
+        <div class="flavor-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="coffee">Coffee</button>
+          <button class="filter-btn" data-filter="tea">Tea</button>
+          <button class="filter-btn" data-filter="specialty">Specialty</button>
+        </div>
+      </div>
+      <div class="floating-coffee-beans">
+        <div class="bean"></div>
+        <div class="bean"></div>
+        <div class="bean"></div>
+      </div>
+    </section>
+
+    <!-- Menu Sections -->
+    <!-- ... (keep previous header and hero section) ... -->
+
+<section class="menu-sections">
+  <!-- Coffee Classics - Expanded -->
+  <div class="menu-section" id="coffee">
+    <h2 class="section-title">
+      <span class="title-icon">☕</span>
+      Coffee Classics
+    </h2>
+    
+    <div class="menu-items">
+      <!-- Espresso -->
+      <div class="menu-item" data-category="coffee">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/Espress0.jpg')"></div>
+          <div class="item-badge">Bold</div>
+        </div>
+        <div class="item-details">
+          <h3>Espresso</h3>
+          <p class="item-desc">Pure, concentrated coffee with rich crema</p>
+          <div class="item-footer">
+            <span class="price">Rp 22,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cappuccino -->
+      <div class="menu-item featured" data-category="coffee">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/cappuccino.jpg')"></div>
+          <div class="featured-badge">Barista's Pick</div>
+          <div class="item-badge">Creamy</div>
+        </div>
+        <div class="item-details">
+          <h3>Cappuccino</h3>
+          <p class="item-desc">Espresso with steamed milk and foam</p>
+          <div class="item-footer">
+            <span class="price">Rp 28,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Americano -->
+      <div class="menu-item" data-category="coffee">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/americano.jpg')"></div>
+          <div class="item-badge">Smooth</div>
+        </div>
+        <div class="item-details">
+          <h3>Americano</h3>
+          <p class="item-desc">Espresso diluted with hot water</p>
+          <div class="item-footer">
+            <span class="price">Rp 25,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flat White -->
+      <div class="menu-item" data-category="coffee">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/flat-white.jpg')"></div>
+          <div class="item-badge">Velvety</div>
+        </div>
+        <div class="item-details">
+          <h3>Flat White</h3>
+          <p class="item-desc">Espresso with microfoam</p>
+          <div class="item-footer">
+            <span class="price">Rp 30,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Iced Coffee - New Section -->
+  <div class="menu-section" id="iced">
+    <h2 class="section-title">
+      <span class="title-icon">🧊</span>
+      Iced Coffee
+    </h2>
+    
+    <div class="menu-items">
+      <!-- Iced Latte -->
+      <div class="menu-item" data-category="iced">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/iced-latte.jpg')"></div>
+          <div class="item-badge">Refreshing</div>
+        </div>
+        <div class="item-details">
+          <h3>Iced Latte</h3>
+          <p class="item-desc">Espresso with chilled milk</p>
+          <div class="item-footer">
+            <span class="price">Rp 32,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vietnamese Iced Coffee -->
+      <div class="menu-item featured" data-category="iced">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/vietnamese-iced.jpg')"></div>
+          <div class="featured-badge">Exotic</div>
+          <div class="item-badge">Sweet</div>
+        </div>
+        <div class="item-details">
+          <h3>Vietnamese Iced</h3>
+          <p class="item-desc">Strong brew with condensed milk</p>
+          <div class="item-footer">
+            <span class="price">Rp 35,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signature Drinks - Expanded -->
+  <div class="menu-section" id="specialty">
+    <h2 class="section-title">
+      <span class="title-icon">✨</span>
+      Signature Creations
+    </h2>
+    
+    <div class="menu-items">
+      <!-- Usagi Latte -->
+      <div class="menu-item featured" data-category="specialty">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/usagi-latte.jpg')"></div>
+          <div class="featured-badge">Customer Favorite</div>
+          <div class="item-badge">Sweet</div>
+        </div>
+        <div class="item-details">
+          <h3>Usagi Latte</h3>
+          <p class="item-desc">Caramel, cinnamon, and espresso harmony</p>
+          <div class="item-footer">
+            <span class="price">Rp 32,000</span>
+            <button class="customize-btn">Customize</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matcha Latte -->
+      <div class="menu-item" data-category="specialty">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/matcha-latte.jpg')"></div>
+          <div class="item-badge">Earthy</div>
+        </div>
+        <div class="item-details">
+          <h3>Matcha Latte</h3>
+          <p class="item-desc">Premium Japanese matcha with milk</p>
+          <div class="item-footer">
+            <span class="price">Rp 35,000</span>
+            <button class="customize-btn">Customize</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salted Caramel Mocha -->
+      <div class="menu-item" data-category="specialty">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/salted-caramel.jpg')"></div>
+          <div class="item-badge">Decadent</div>
+        </div>
+        <div class="item-details">
+          <h3>Salted Caramel Mocha</h3>
+          <p class="item-desc">Chocolate, caramel, and sea salt</p>
+          <div class="item-footer">
+            <span class="price">Rp 38,000</span>
+            <button class="customize-btn">Customize</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tea Selection - New Section -->
+  <div class="menu-section" id="tea">
+    <h2 class="section-title">
+      <span class="title-icon">🍵</span>
+      Tea Selection
+    </h2>
+    
+    <div class="menu-items">
+      <!-- Earl Grey -->
+      <div class="menu-item" data-category="tea">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/earl-grey.jpg')"></div>
+          <div class="item-badge">Floral</div>
+        </div>
+        <div class="item-details">
+          <h3>Earl Grey</h3>
+          <p class="item-desc">Black tea with bergamot</p>
+          <div class="item-footer">
+            <span class="price">Rp 25,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jasmine Green -->
+      <div class="menu-item" data-category="tea">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/jasmine-green.jpg')"></div>
+          <div class="item-badge">Fragrant</div>
+        </div>
+        <div class="item-details">
+          <h3>Jasmine Green</h3>
+          <p class="item-desc">Green tea scented with jasmine</p>
+          <div class="item-footer">
+            <span class="price">Rp 28,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bakery - New Section -->
+  <div class="menu-section" id="bakery">
+    <h2 class="section-title">
+      <span class="title-icon">🥐</span>
+      Bakery Goods
+    </h2>
+    
+    <div class="menu-items">
+      <!-- Croissant -->
+      <div class="menu-item" data-category="bakery">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/croissant.jpg')"></div>
+          <div class="item-badge">Buttery</div>
+        </div>
+        <div class="item-details">
+          <h3>Butter Croissant</h3>
+          <p class="item-desc">Flaky French pastry</p>
+          <div class="item-footer">
+            <span class="price">Rp 25,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chocolate Chip Cookie -->
+      <div class="menu-item featured" data-category="bakery">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/chocolate-chip.jpg')"></div>
+          <div class="featured-badge">Best Seller</div>
+          <div class="item-badge">Sweet</div>
+        </div>
+        <div class="item-details">
+          <h3>Chocolate Chip Cookie</h3>
+          <p class="item-desc">With Belgian chocolate chunks</p>
+          <div class="item-footer">
+            <span class="price">Rp 20,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matcha Danish -->
+      <div class="menu-item" data-category="bakery">
+        <div class="item-visual">
+          <div class="item-image" style="background-image: url('assets/images/matcha-danish.jpg')"></div>
+          <div class="item-badge">Earthy</div>
+        </div>
+        <div class="item-details">
+          <h3>Matcha Danish</h3>
+          <p class="item-desc">Flaky pastry with matcha cream</p>
+          <div class="item-footer">
+            <span class="price">Rp 28,000</span>
+            <button class="add-to-cart">Add +</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ... (keep brewing guide and footer sections) ... -->
+
+  <footer class="usagi-footer">
+    <!-- Your existing footer -->
+  </footer>
+
+  <script src="/scripts/menu.js"></script>
+</body>
+</html>
