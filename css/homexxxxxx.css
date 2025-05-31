@@ -310,13 +310,14 @@ html, body {
   .slider {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Efek transisi */
-    width: 100%; /* Lebar slider sesuai container */
+    width: 100%;
+    height: auto; /* Lebar slider sesuai container */
   }
   
   .slider img {
     width: 100%; /* Lebar gambar sesuai container */
     height: 100%; /* Tinggi gambar sesuai container */
-    object-fit: cover; /* Memastikan gambar mengisi wadah */
+    object-fit: fill; /* Memastikan gambar mengisi wadah */
     flex-shrink: 0; /* Mencegah gambar menyusut */
     border-radius: 10px; /* Menambahkan border radius */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
@@ -369,7 +370,7 @@ html, body {
   }
   
 .best-seller {
-  background-color: #fefdf9;
+  background-color: #ffffff;
   padding: 60px 40px;
   text-align: center;
 }
