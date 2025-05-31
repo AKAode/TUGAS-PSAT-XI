@@ -126,6 +126,12 @@ html, body {
 }
 
 .nav-actions {
+  text-decoration: none;
+  text-shadow: #333;
+  font-family: 'Creato Display', sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -203,15 +209,6 @@ html, body {
     background-color: rgba(218, 79, 79, 0.1);
 }
 
-/* Hover Effect 2: Solid Background (alternative) */
-/*
-.sidebar-nav a:hover {
-    background-color: brown;
-    color: white;
-    transform: translateX(5px);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-}
-*/
 
 /* Active State */
 .sidebar-nav a.active {
