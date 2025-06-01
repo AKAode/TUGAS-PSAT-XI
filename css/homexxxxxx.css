@@ -185,7 +185,7 @@ header {
   top: 0;
   left: 25;
   width: 80%;
-  height: 80%;
+  height: 90%;
   z-index: 0;
 }
 
@@ -236,7 +236,7 @@ header {
 }
 
 .section-subtitle {
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: var(--text-light);
   max-width: 700px;
   margin: 0 auto;
@@ -423,11 +423,6 @@ header {
   display: block;
 }
 
-.author-title {
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
 /* Instagram Section */
 .instagram-section {
   padding: 100px 0;
@@ -436,7 +431,7 @@ header {
 
 .feed-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
   gap: 15px;
   margin-top: 50px;
 }
@@ -505,7 +500,7 @@ header {
   padding: 15px 35px;
   background-color: var(--accent-color);
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   border-radius: 50px;
   transition: var(--transition);
