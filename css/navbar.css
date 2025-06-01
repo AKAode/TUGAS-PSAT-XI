@@ -99,6 +99,14 @@
   gap: 16px;
 }
 
+.sign-up-button {
+  text-decoration: none;
+  text-shadow: #333;
+  font-family: 'Creato Display', sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
 
 
   

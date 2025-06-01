@@ -180,11 +180,12 @@ header {
 
 /* Slider Styles */
 .slider-container {
+  margin-top: 30px;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 25;
+  width: 80%;
+  height: 80%;
   z-index: 0;
 }
 
