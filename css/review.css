@@ -191,16 +191,20 @@ body {
   background: #a86b44;
   color: white;
   border: none;
-  padding: 12px 30px;
+  padding: 12px 60px;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.write-review-btn:hover {
-  background: #8a5738;
+.write-review-btn a {
+text-decoration: none;
+color: white;
 }
 
 /* Responsive Design */
