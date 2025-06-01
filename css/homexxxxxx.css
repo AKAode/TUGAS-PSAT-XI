@@ -1,669 +1,646 @@
- 
-@import url('https://fonts.cdnfonts.com/css/creato-display');
+/* Replace all @import with these */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/creato-display?styles=156161,156160,156159,156158,156157');
+:root {
+  --primary-color: #8B5A2B;
+  --secondary-color: #F5E8D0;
+  --accent-color: #D4A76A;
+  --dark-color: #3D2C29;
+  --light-color: #FFF9F0;
+  --text-color: #333333;
+  --text-light: #7A5E4F;
+  --white: #FFFFFF;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
 
+/* Replace all font-family declarations with these */
+body {
+  font-family: 'Creato Display', 'Helvetica Neue', Arial, sans-serif;
+  /* Add this to force the font to load */
+  font-display: swap;
+}
+/* Add this at the very end of your CSS file */
+@font-face {
+  font-family: 'Creato Display Fallback';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), local('Helvetica Neue');
+}
 
+body {
+  font-family: 'Creato Display', 'Creato Display Fallback', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  /* Fallback for Playfair Display */
+  font-display: swap;
+}
+
+/* Add this as a fallback for elements that might not inherit properly */
+button, input, textarea, select {
+  font-family: 'Creato Display', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Add this to ensure fallback fonts work properly */
 * {
-    margin: 0;
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: 'Creato Display', sans-serif;
-  }
-  
-html, body {
-  height: 100%;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Creato Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
 }
 
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.main-content {
-  flex: 1;
-  padding-bottom: 20px; /* Jarak sebelum footer */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-  body {
-    background-color: white;
-    overflow-x: hidden;
-  }
-  header {
+/* Header Styles */
+header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   z-index: 1000;
-}
-
-.main-content {
-  margin-top: 88px; /* Sesuaikan dengan tinggi header */
-}
-  
-  /* Header */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2000; /* Pastikan z-index lebih tinggi dari sidebar */
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Add to your css/homeA.css */
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 32px;
-  background: #fff;
-  height: 88px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.nav-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  position: relative;
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  line-height: 100px;
-  margin-right: 24px;
-  margin-top: 25px;
-  text-decoration: none;
-  text-shadow: #333;
-  font-family: 'Creato Display', sans-serif;
-  font-size: 18px;
-  color: #000;
-  font-weight: bold;
-  border-radius: 20px;  
-  padding: 0px 20px;
-  display: block;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: 30px; /* Sesuaikan posisi underline */
-  left: 20px;
-  width: 0;
-  height: 2px;
-  background-color: #fbba72;
-  transition: width 0.3s ease;
-  transform: translateX(-50%);
-  left: 50%;
-}
-
-.nav-links a:hover::after {
-  width: calc(100% - 40px); /* Sesuaikan dengan padding */
-}
-
-.nav-links a:hover {
-  color: #fbba72;
-  background-color: transparent;
-  font-size: 25px;
-} 
-
-/* Optional: Add an animation for the text */
-.nav-links a span {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.nav-links a:hover span {
-  transform: translateY(-3px);
-}
-
-.nav-actions {
-  text-decoration: none;
-  text-shadow: #333;
-  font-family: 'Creato Display', sans-serif;
-  font-size: 18px;
-  color: #000;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  background-color: var(--light-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  font-family: 'Creato Display', sans-serif;    
 }
 
 
 
-  
-
-  
-  /* Tambahkan ini di bagian CSS yang ada */
-.nav-logo {
-    justify-content: center;
-    align-items: center;
-    width: 150px; /* Atur ukuran logo sesuai kebutuhan */
-    height: 150px; /* Atur ukuran logo sesuai kebutuhan */
-    
-    /* margin-left: 1150px; */
-}
-    
 /* Sidebar Styles */
 .sidebar {
-    position: fixed;
-    left: -200px;
-    top: 88px;
-    transition: left 0.3s ease;
-    background-color: #fff; /* Ganti warna background */
-    width: 200px;
-    height: calc(100% - 88px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 20px 0;
+  position: fixed;
+  left: -250px;
+  top: 80px;
+  width: 250px;
+  height: calc(100vh - 80px);
+  background-color: var(--white);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  z-index: 999;
+  padding: 30px 0;
+}
+
+.sidebar.active {
+  left: 0;
 }
 
 .sidebar-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
 }
 
 .sidebar-nav li {
-    padding: 0 15px;
-    margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .sidebar-nav a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    padding: 12px 15px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    font-weight: 500;
-}
-
-/* Hover Effect 1: Modern Underline */
-.sidebar-nav a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-    width: 0;
-    height: 2px;
-    background-color: #fbba72;
-    transition: width 0.3s ease;
-}
-
-.sidebar-nav a:hover::before {
-    width: calc(100% - 30px);
+  display: block;
+  padding: 12px 30px;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: var(--transition);
 }
 
 .sidebar-nav a:hover {
-    color: #fbba72;
-    background-color: rgba(218, 79, 79, 0.1);
-}
-
-
-/* Active State */
-.sidebar-nav a.active {
-    background-color: brown;
-    color: white;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .toggle-button {
-    cursor: pointer;
-    font-size: 30px;
-    position: fixed;
-    left: 25px;
-    top: 25px;
-    z-index: 1001;
-    background: white;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  background: var(--white);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
 }
 
 .toggle-button:hover {
-    background-color: #f5f5f5;
-    transform: scale(1.1);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
 }
 
-  /* Promo Section */
-  .promo-banner {
-    position: relative;
-    background-image: url(c0pi.jpg ) ;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 20px;
-    height: 400px;  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 0px;
-    }
-    
-    .promo-banner::before{
-      content: '';
-      position: absolute;
-      background-size: cover;
-      background-position: center;
-      background-image: url(c0pi.jpg);
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: 1;
-
-    }
-    
-    .promo-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    }
-    
-    .promo-content h1, .promo-content h2, .subtext {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    }
-  
-  .promo-content h2 {
-    font-size: 80px;
-    color: white;
-    text-shadow: 2px 2px black;
-    margin: 10px 0px;
-    margin-right: 700px;
-    text-align: center
-  }
-  .promo-content p{
-    font-size: 20px;
-    color: white;
-    text-shadow: 2px 2px black;
-    margin: 10px 0;
-    margin-right: 700px;
-    font-family: 'Creato Display', sans-serif;
-  }
-
-  .slider-container {
-    width: 100%; /* Sesuaikan lebar slider */
-    overflow: hidden; /* Menyembunyikan gambar yang tidak terlihat */
-    margin: 0 auto; /* Memusatkan slider */
-    border-radius: 10px; /* Menambahkan border radius */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-  }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Efek transisi */
-    width: 100%;
-    height: auto; /* Lebar slider sesuai container */
-  }
-  
-  .slider img {
-    width: 100%; /* Lebar gambar sesuai container */
-    height: 100%; /* Tinggi gambar sesuai container */
-    object-fit: fill; /* Memastikan gambar mengisi wadah */
-    flex-shrink: 0; /* Mencegah gambar menyusut */
-    border-radius: 10px; /* Menambahkan border radius */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
-  }
-  .section-title {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .section-text {
-    max-width: 800px;
-    margin: 0 auto 40px;
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .subtext {
-    color: red;
-    font-weight: bold;
-    margin-top: 15px;
-    font-size: 16px;
-  }
-  
-  .promo-bag img {
-    width: 200px;
-  }
-
-  .new-products {
-    padding: 40px 60px;
-    background-color: #fff;
-  }
-  
-  .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  
-  .section-title::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 10px;
-    background-color: #fbba72;
-    margin: 10px auto 0;
-    border-radius: 50%;
-  }
-  
-.best-seller {
-  background-color: #ffffff;
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.product-grid {
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 80px;
+  overflow: hidden;
 }
 
-.product-card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-  padding: 24px;
-  width: 260px;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-6px);
-}
-
-.product-card img {
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 160px; /* ubah sesuai rasio landscape */
-  object-fit: cover; /* tetap cover agar gak gepeng */
-  object-position: center;
-  border-radius: 12px;
-  margin-bottom: 18px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-
-.product-card h3 {
-  margin: 10px 0 5px;
-  font-size: 20px;
-  color: #442c2e;
-}
-
-.rating {
-  font-size: 20px;
-  color: #f7b731;
-}
-
-.more-btn-container {
-  margin-top: 50px;
-}
-
-.more-button {
-  background-color: #8c5e3c;
-  color: #fff;
-  padding: 14px 32px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 17px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-block;
-}
-
-.more-button:hover {
-  background-color: #a86b44;
-  transform: scale(1.05);
-}
-
-.testimoni-section {
-  background-color: #ffffff;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.testimoni-section h2 {
-  color: #3D2C29;
-  font-size: 2.25rem; /* text-3xl */
-  font-weight: 700;
-}
-
-.testimoni-section p {
-  color: #7A5E4F;
-  margin-top: 0.5rem;
-}
-
-.testimoni-section .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .testimoni-section .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.testimoni-section .shadow-md {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.testimoni-section .rounded-2xl {
-  border-radius: 1rem;
-}
-
-.testimoni-section .p-6 {
-  padding: 1.5rem;
-}
-
-.testimoni-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.testimoni-section .text-sm {
-  font-size: 0.875rem;
-}
-
-.testimoni-section .font-semibold {
-  font-weight: 600;
-}
-
-.testimoni-section .mt-12 {
-  margin-top: 3rem;
-}
-
-.testimoni-section .inline-block {
-  display: inline-block;
-}
-
-.testimoni-section .rounded-full {
-  border-radius: 9999px;
-}
-
-.testimoni-section .border-2 {
-  border-width: 2px;
-}
-
-.testimoni-section .transition {
-  transition: all 0.3s ease;
-}
-
-.testimoni-section a {
-  padding: 0.75rem 2rem;
-  background-color: #ffffff;
-  border-color: #3D2C29;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 20px;
-  color: #3D2C29;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.testimoni-section a:hover {
-  background-color: #3D2C29;
-  color: white;
-}
-.instagram-section {
-  padding: 5rem 2rem 6rem; /* Tambah space bawah */
-  background-color: #fff;
-}
-
-.section-header {
-  margin-bottom: 3rem; /* Tambah jarak ke grid */
-}
-
-.instagram-section {
-  padding: 5rem 2rem 6rem;
-  background-color: #fff;
-}
-
-.section-header {
-  margin-bottom: 3rem; /* Tambah jarak ke grid */
+.hero-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
+  color: var(--white);
+  padding: 0 20px;
+  max-width: 800px;
 }
 
-.instagram-section h2 {
-  font-size: 2rem;
-  color: #3D2C29;
-  margin-top: 0.25rem;
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease;
+  font-family: 'Creato Display', 'Creato Display Fallback', sans-serif;
 }
 
-.follow-button {
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-button {
   display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.5rem 1.5rem;
-  border: 2px solid #3D2C29;
-  border-radius: 9999px;
-  color: #3D2C29;
+  padding: 15px 30px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-size: 1.1rem;
   font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  border-radius: 50px;
+  transition: var(--transition);
+  animation: fadeInUp 1s ease 0.4s forwards;
+  opacity: 0;
 }
 
-.follow-button:hover {
-  background-color: #3D2C29;
-  color: #fff;
+.hero-button:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.feed-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 2rem; /* Tambah spasi atas */
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.feed-grid img {
+/* Slider Styles */
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  border-radius: 1rem;
+  height: 100%;
+  z-index: 0;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 1 / 1;
-  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
-.feed-grid img:hover {
-  transform: scale(1.03);
+/* Section Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  font-family: 'Creato Display', 'Creato Display Fallback', sans-serif;
+}
 
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
 
-  
-    .our-story {
-  padding: 60px 40px;
-  background-color: #fffaf3;
+.section-divider {
+  width: 100px;
+  height: 2px;
+  background-color: var(--accent-color);
+  margin: 20px auto;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Story Section */
+.story-section {
+  padding: 100px 0;
+  background-color: var(--light-color);
 }
 
 .story-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
-.story-image img {
+.story-image {
+  flex: 1;
+  min-width: 300px;
   max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.story-image img {
   width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  height: auto;
+  transition: var(--transition);
+}
+
+.story-image:hover img {
+  transform: scale(1.03);
 }
 
 .story-text {
+  flex: 1;
+  min-width: 300px;
   max-width: 600px;
 }
 
-.story-text h2 {
-  font-size: 40px;
-  color: #442c2e;
+.story-text p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+/* Products Section */
+.products-section {
+  padding: 100px 0;
+  background-color: var(--light-color);
+  
+}
+.products-section h3{
+  font-family: 'Creato Display', 'Creato Display Fallback', sans-serif;
+  
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.product-card {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  text-align: center;
+  
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
-.story-text p {
-  font-size: 18px;
-  color: #4e4039;
-  line-height: 1.8;
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
 }
 
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
 
-  /* scroll snap */
-  .scroll-container {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    padding-top: 120px;
-  }
-  
-  .scroll-section {
-    height: 100vh;
-    scroll-snap-align: start;
-  }
-  
-  .promo-banner,
-  .new-products,
-  .main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.product-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
 
-/* Add to your home page CSS */
-.page-wrapper {
+.rating {
+  color: #FFC107;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.rating-count {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin-top: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 100px 0;
+  background-color: var(--light-color);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
-.main-content {
-  flex: 1;
+.testimonial-card:hover {
+  transform: translateY(-5px);
 }
 
-footer {
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 3px solid var(--accent-color);
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.testimonial-author {
   margin-top: auto;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--dark-color);
+  display: block;
+}
+
+.author-title {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Instagram Section */
+.instagram-section {
+  padding: 100px 0;
+  background-color: var(--light-color);
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.instagram-post {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.instagram-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(139, 90, 43, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.post-overlay i {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.instagram-post:hover .post-overlay {
+  opacity: 1;
+}
+
+.instagram-post:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+/* Replace the existing .more-btn-container with this */
+.more-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Add this for the follow button container */
+.follow-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Update the button styles to remove the margin-top */
+.more-button, .follow-button {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: var(--transition);
+  text-align: center;
+  margin-top: 0; /* Remove the previous margin-top */
+}
+
+.more-button:hover, .follow-button:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.follow-button:hover {
+  color: var(--white);
+}
+
+
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 15px 20px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .story-container {
+    flex-direction: column;
+  }
+  
+  .story-image, .story-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-sections {
+    grid-template-columns: 1fr;
+    font-family: 'Creato Display', 'Creato Display Fallback', sans-serif;
+  }
 }

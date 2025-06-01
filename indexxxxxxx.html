@@ -3,192 +3,270 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Usagi Coffee</title>
+  <title>Usagi Coffee - Premium Coffee Experience</title>
   <link rel="stylesheet" href="css/homexxxxxx.css"/>
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="masukan nama file icon">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/creato-display" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <meta name="description" content="Usagi Coffee offers premium coffee blends in a cozy atmosphere. Experience our handcrafted beverages and delicious pastries.">
 </head>
 <body>
-  <header>
-  <nav class="main-nav">
-    <div class="logo"></div>
-    <ul class="nav-links">
-      <li><img src="assets/images/logo.png" alt="Logo" class="nav-logo" /></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="pages/menu.html">Menu</a></li>
-      <li><a href="pages/contact.html">Contact</a></li>
-      <li><a href="pages/review.html">Reviews</a></li>
-      <li><a href="pages/findus.html">Find Us</a></li>
-    </ul>
-    <div class="nav-actions">
-      <span></span>
-      <span>🔔</span>
-      <span>🌐 EN</span>
-    </div>
-    <div class="sidebar">
-    <div class="toggle-button" onclick="toggleSidebar()">&#8801;</div>
-    <nav class="sidebar-nav">
-        <ul>
-            <li><a href="#home">About Us</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#best-seller">Best Seller</a></li>
-            <li><a href="#testimoni">Testimoni</a></li>
-            <li><a href="#follow">Follow Us</a></li>
-        </ul>
-  </nav>
-</header>
+  <!-- Header Section -->
+ <header>
+    <nav class="main-nav">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><img src="/assets/images/logo.png" alt="Logo" class="nav-logo"></li>
+        <li><a href="/indexxxxxxx.html">Home</a></li>
+        <li><a href="/pages/menu.html">Menu</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/review.html">Reviews</a></li>
+        <li><a href="#" class="active">Find Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <span class="cart-icon">🛒</span>
+        <span>🌐 EN</span>
+      </div>
+    </nav>
   
-  <section id="home" class="scroll-section promo-banner">
-    <div class="promo-content">
-      <h2></h2>
-      <p></p>
+
+    
+    <div class="sidebar">
+      <div class="toggle-button" onclick="toggleSidebar()">&#8801;</div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#home">About Us</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#best-seller">Best Seller</a></li>
+          <li><a href="#testimoni">Testimonials</a></li>
+          <li><a href="#follow">Follow Us</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Experience the Art of Coffee</h1>
+      <p class="hero-subtitle">Handcrafted with passion, served with love</p>
+      <a href="pages/menu.html" class="hero-button">Explore Our Menu</a>
+    </div>
+    
     <div class="slider-container">
       <div class="slider">
-        <img src="assets/images/2.png" alt="Gambar 1">
-        <img src="assets/images/3.png" alt="Gambar 2">
-        <img src="assets/images/4.png" alt="Gambar 3">
-        <img src="assets/images/5.png" alt="Gambar 4">
-        
+        <img src="assets/images/2.png" alt="Usagi Coffee Interior" loading="lazy">
+        <img src="assets/images/3.png" alt="Coffee Preparation" loading="lazy">
+        <img src="assets/images/4.png" alt="Coffee Selection" loading="lazy">
+        <img src="assets/images/5.png" alt="Coffee Presentation" loading="lazy">
       </div>
     </div>
-
-    </section>
- <section id="story" class="scroll-section new-products">
-  <h2 class="section-title">Our Story</h2>
-  <div class="our-story-container" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap;">
-    <img src="imagesbuatinf0r/pouring-di-bar.jpg" alt="Our coffee journey" style="max-width: 500px; width: 100%; border-radius: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-    <div class="story-text" style="max-width: 600px; text-align: justify; font-size: 18px; line-height: 1.6;">
-      <p>
-        Founded in 2023, <strong>Usagi Coffee</strong> began as a small passion project between friends who believed in creating more than just coffee. We dreamed of a place where stories are shared, memories are made, and every cup brings warmth and connection.
-      </p>
-      <p>
-        Our beans are handpicked from the finest local farms, roasted with precision, and brewed with heart. Every detail – from our carefully crafted menu to the cozy ambiance – reflects our commitment to quality and creativity.
-      </p>
-      <p>
-        More than just a café, Usagi Coffee is a celebration of community and the simple joys of life. Come join our story, one sip at a time.
-      </p>
-    </div>
-  </div>
-</section>
-
   </section>
-    <section id="best-seller" class="best-seller">
-  <h2 class="section-title">Best Seller</h2>
-  <div class="product-grid">
-    
-    <div class="product-card">
-      <img src="assets/images/cappucin0.jpg" alt="Croffle Coklat" />
-      <h3>Cappuccino</h3>
-      <div class="rating">
-        ★★★★☆
-      </div>
-    </div>
-    <!-- Produk 2 -->
-    <div class="product-card">
-      <img src="assets/images/1atte.jpg" alt="Kopi Susu Aren" />
-      <h3>Latte</h3>
-      <div class="rating">
-        ★★★★★
-      </div>
-    </div>
-    <!-- Produk 3 -->
-    <div class="product-card">
-      <img src="imagesbuatinf0r/download.jpeg" alt="Cheese Toast" />
-      <h3>Strawberry Cheesecake</h3>
-      <div class="rating">
-        ★★★★☆
-      </div>
+
+  <!-- Our Story Section -->
+  <section id="story" class="story-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Story</h2>
+      <div class="section-divider"></div>
     </div>
     
-    <div class="product-card">
-      <img src="imagesbuatinf0r/images (1).jpeg" alt="Matcha Latte" />
-      <h3>Matcha Latte</h3>
-      <div class="rating">
-        ★★★★☆
+    <div class="story-container">
+      <div class="story-image">
+        <img src="imagesbuatinf0r/pouring-di-bar.jpg" alt="Our coffee journey" loading="lazy">
+      </div>
+      <div class="story-text">
+        <p>
+          Founded in 2023, <strong>Usagi Coffee</strong> began as a small passion project between friends who believed in creating more than just coffee. We dreamed of a place where stories are shared, memories are made, and every cup brings warmth and connection.
+        </p>
+        <p>
+          Our beans are handpicked from the finest local farms, roasted with precision, and brewed with heart. Every detail – from our carefully crafted menu to the cozy ambiance – reflects our commitment to quality and creativity.
+        </p>
+        <p>
+          More than just a café, Usagi Coffee is a celebration of community and the simple joys of life. Come join our story, one sip at a time.
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 
-  
-  <div class="more-btn-container">
-    <a href="pages/menu.html" class="more-button">Selengkapnya</a>
-  </div>
-
-<section id = testimoni class="testimoni-section py-20 px-6 lg:px-20 bg-white">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl lg:text-4xl font-bold text-[#3D2C29]">Testimoni</h2>
-    <p class="mt-2 text-[#7A5E4F]">Testimoni Sukses Kami</p>
-  </div>
-
-  <div class="grid gap-8 lg:grid-cols-3">
+  <!-- Best Sellers Section -->
+  <section id="best-seller" class="products-section">
+    <div class="section-header">
+      <h2 class="section-title">Our Best Sellers</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Customer favorites you'll love</p>
+    </div>
     
-    <div class="bg-[#F9F6F3] rounded-2xl p-6 shadow-md flex flex-col items-center text-center">
-      <img src="imagesbuatinf0r/mb0h4.jpeg" alt="Fore Matcha" class="w-32 h-auto mb-4">
-      <p class="text-[#3D2C29] text-sm leading-relaxed mb-6">
-        “Integrasi Ekosistem Digital kami memudahkan Gen Z & Milenial membeli kopi secara digital.
-        Terbukti, transaksi tinggi karena promosinya menarik!”
-      </p>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="assets/images/cappucin0.jpg" alt="Cappuccino" loading="lazy">
+        </div>
+        <h3>Cappuccino</h3>
+        <div class="rating">
+          ★★★★☆ <span class="rating-count">(428)</span>
+        </div>
+        <p class="product-desc">Perfectly balanced espresso with steamed milk and silky foam</p>
+      </div>
       
-      <span class="font-semibold text-[#3D2C29]">Albertus Kurniawisnu</span>
-    </div>
-
-    
-    <div class="bg-[#F9F6F3] rounded-2xl p-6 shadow-md flex flex-col items-center text-center">
-      <img src="imagesbuatinf0r/mb0h6.jpeg" alt="Fore Coffee" class="w-32 h-auto mb-4">
-      <p class="text-[#3D2C29] text-sm leading-relaxed mb-6">
-        “Kami sangat mengapresiasi kolaborasi bersama Fore Coffee yang menginspirasi banyak pihak
-        terutama dalam kampanye kebaikan.”
-      </p>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="assets/images/1atte.jpg" alt="Latte" loading="lazy">
+        </div>
+        <h3>Latte</h3>
+        <div class="rating">
+          ★★★★★ <span class="rating-count">(512)</span>
+        </div>
+        <p class="product-desc">Smooth espresso blended with steamed milk for a creamy texture</p>
+      </div>
       
-      <span class="font-semibold text-[#3D2C29]">Bayu Rahajeng</span>
-    </div>
-
-    
-    <div class="bg-[#F9F6F3] rounded-2xl p-6 shadow-md flex flex-col items-center text-center">
-      <img src="imagesbuatinf0r/mb0h5.jpeg" alt="Fore Tea" class="w-32 h-auto mb-4">
-      <p class="text-[#3D2C29] text-sm leading-relaxed mb-6">
-        “Fore adalah salah satu mitra terbaik. Kolaborasi sangat cepat, tim responsif dan
-        sangat profesional.”
-      </p>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imagesbuatinf0r/download.jpeg" alt="Strawberry Cheesecake" loading="lazy">
+        </div>
+        <h3>Strawberry Cheesecake</h3>
+        <div class="rating">
+          ★★★★☆ <span class="rating-count">(387)</span>
+        </div>
+        <p class="product-desc">Creamy cheesecake with fresh strawberry topping</p>
+      </div>
       
-      <span class="font-semibold text-[#3D2C29]">Kevin Alfilo</span>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="imagesbuatinf0r/images (1).jpeg" alt="Matcha Latte" loading="lazy">
+        </div>
+        <h3>Matcha Latte</h3>
+        <div class="rating">
+          ★★★★☆ <span class="rating-count">(421)</span>
+        </div>
+        <p class="product-desc">Premium matcha powder whisked with steamed milk</p>
+      </div>
     </div>
-  </div>
-
-  <div class="text-center mt-12">
-    <a href="pages/review.html" class="inline-block px-8 py-3 rounded-full border-2 border-[#3D2C29] text-[#3D2C29] hover:bg-[#3D2C29] hover:text-white transition font-medium">
-      Lihat Selengkapnya
-    </a>
-  </div>
-</section>
-
-<section id= "follow" class="instagram-section">
-  <div class="text-center mb-10">
-    <p class="text-green-600 font-medium">Follow kami!</p>
-    <h2 class="text-3xl font-bold text-[#3D2C29]">@usagi_coffeee</h2>
-    <a href="https://youtu.be/dQw4w9WgXcQ?si=8BShMVKYN7FWNBI0" target="_blank" class="follow-button">Follow</a>
-  </div>
-
-  <div class="feed-grid">
     
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-    <img src="/imagesbuatinf0r/c0ming s00n.jpg" alt="Feed 1">
-   
-  
+    <div class="more-btn-container">
+      <a href="pages/menu.html" class="more-button">View Full Menu <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
 
-  </div>
-</section>
-<footer>
+  <!-- Testimonials Section -->
+  <section id="testimoni" class="testimonials-section">
+    <div class="section-header">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">Join our community of happy coffee lovers</p>
+    </div>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="imagesbuatinf0r/mb0h4.jpeg" alt="Albertus Kurniawisnu" loading="lazy">
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Integrasi Ekosistem Digital kami memudahkan Gen Z & Milenial membeli kopi secara digital. Terbukti, transaksi tinggi karena promosinya menarik!"
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Albertus Kurniawisnu</span>
+            <span class="author-title">Digital Strategist</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="imagesbuatinf0r/mb0h6.jpeg" alt="Bayu Rahajeng" loading="lazy">
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Kami sangat mengapresiasi kolaborasi bersama Usagi Coffee yang menginspirasi banyak pihak terutama dalam kampanye kebaikan."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Bayu Rahajeng</span>
+            <span class="author-title">Marketing Director</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-image">
+          <img src="imagesbuatinf0r/mb0h5.jpeg" alt="Kevin Alfilo" loading="lazy">
+        </div>
+        <div class="testimonial-content">
+          <p class="testimonial-text">
+            "Usagi Coffee adalah salah satu mitra terbaik. Kolaborasi sangat cepat, tim responsif dan sangat profesional."
+          </p>
+          <div class="testimonial-author">
+            <span class="author-name">Kevin Alfilo</span>
+            <span class="author-title">Business Consultant</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="more-btn-container">
+      <a href="pages/review.html" class="more-button">Read More Reviews <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Instagram Section -->
+  <section id="follow" class="instagram-section">
+    <div class="section-header">
+      <h2 class="section-title">Follow Our Journey</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle">@usagi_coffeee</p>
+    </div>
+    
+    <div class="feed-grid">
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="instagram-post">
+        <img src="imagesbuatinf0r/c0ming s00n.jpg" alt="Usagi Coffee Post" loading="lazy">
+        <div class="post-overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    
+    <div class="follow-btn-container">
+      <a href="https://instagram.com/usagi_coffeee" target="_blank" class="follow-button">
+        Follow Us <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
   <div class="footer-container">
     <div class="footer-top">
       <div class="footer-brand">
@@ -236,9 +314,6 @@
     </div>
   </div>
 </footer>
-
-
+  <script src="scripts/jawa.js"></script>
 </body>
 </html>
-
-<script src="scripts/jawa.js"></script>

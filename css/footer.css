@@ -71,6 +71,7 @@ footer {
   margin-bottom: 1rem;
   color: #fff;
   letter-spacing: 0.05em;
+  font-family: 'Creato Display', 'Creato Display Fallback', sans-serif
 }
 
 .footer-column p,
