@@ -62,7 +62,7 @@ body {
 }
 
 .signup-container legend {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bolder;
     margin-bottom: 20px;
     text-align: center;
@@ -138,6 +138,8 @@ body {
 }
 
 .submit {
+    font-family: 'Creato Display', sans-serif;
     font-weight: bold;
     color: #fff;
+    text-decoration: none;
 }
